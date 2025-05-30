@@ -49,7 +49,12 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
 
     # Get the audio URL from links (if available)
     links = episode.get("links", [])
-    audio_url = links[0]["href"] if links else None
+    audio_url = None
+
+    for link in links:
+        if link.get("type") == "audio/mpeg":
+            audio_url = link.get("href")
+            break
 
     if audio_url:
         filepath = os.path.join(download_dir, f"{title}.mp3")
