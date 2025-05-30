@@ -1,3 +1,18 @@
+"""
+download_audio.py
+=================
+
+This script downloads podcast episodes as MP3 audio files from URLs listed in
+a episode-level metadata file, `data/episode_metadata.json`. These audio files
+are saved into a separate directory, `episode_audio`.
+
+Usage
+-----
+
+To execute this script, run:
+    python3 download_audio.py
+
+"""
 import json
 import os
 import subprocess

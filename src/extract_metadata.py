@@ -1,3 +1,21 @@
+"""
+extract_metadata.py
+===================
+
+This script extracts show- and episode-level metadata from podcasts RSS URLs
+listed in a separate CSV file. It only extracts this metadata for one specified
+filtering year. After extraction, it writes all collected metadata to two JSON
+files in a separate directory, `data/show_metadata.json` and
+`data/episode_metadata.json`.
+
+Usage
+-----
+
+To execute this script, run:
+    python3 extract_metadata.py --path YOUR_CSV_PATH --year FILTER_YEAR
+
+"""
+
 import argparse
 import csv
 import json
