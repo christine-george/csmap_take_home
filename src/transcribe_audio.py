@@ -15,12 +15,13 @@ To execute this script, run:
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 import whisperx
+import torch
 
-AUDIO_DIR = "episode_audio2"
+AUDIO_DIR = "episode_audio2/"
 OUTPUT_DIR = "episode_transcripts/"
-MODEL_SIZE = "small"
+MODEL_SIZE = "tiny"
+
 MAX_WORKERS = 3
-DEVICE = "cpu"
 
 # Global variable for model
 model = None
@@ -28,6 +29,15 @@ model = None
 
 def init_worker():
     global model
+
+    # Check if CUDA is available
+    if torch.cuda.is_available():
+        DEVICE = "cuda"
+        print("CUDA is available. Using GPU for transcription.")
+    else:
+        DEVICE = "cpu"
+        print("CUDA not available. Falling back to CPU.")
+
     model = whisperx.load_model(MODEL_SIZE, DEVICE, compute_type="float32")
 
 

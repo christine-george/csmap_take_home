@@ -15,6 +15,7 @@ To execute this script, run:
 """
 import json
 import os
+import re
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List
@@ -44,6 +45,11 @@ def load_metadata_from_json(path: str) -> List[Dict[str, Any]]:
         return episode_metadata
 
 
+def sanitize_filename(filename: str) -> str:
+    # Replace characters that are not allowed in Windows and Mac filenames with an underscore
+    return re.sub(r'[<>:"/\\|?*]', '_', filename)
+
+
 def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
     """Downloads the MP3 for a single podcast episode.
 
@@ -59,8 +65,8 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
         The directory where the downloaded MP3 file should be saved.
     """
 
-    # Lightly sanitize the episode title to replace invalid characters
-    title = episode.get("title", "untitled").replace("/", "_")
+    # Sanitize the episode title to replace invalid characters
+    title = sanitize_filename(episode.get("title", "untitled"))
 
     # Get the audio URL from links (if available)
     links = episode.get("links", [])
