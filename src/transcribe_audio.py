@@ -1,80 +1,36 @@
-"""
-transcribe_audio.py
-===================
-
-This script creates text transcripts of podcast episodes in the form of MP3
-files.
-
-Usage
------
-
-To execute this script, run:
-    python3 src/transcribe_audio.py
-
-"""
+from concurrent.futures import ProcessPoolExecutor
 import os
-from concurrent.futures import ProcessPoolExecutor, as_completed
 import whisperx
-import torch
 
-AUDIO_DIR = "episode_audio2/"
-OUTPUT_DIR = "episode_transcripts/"
-MODEL_SIZE = "tiny"
+# Load WhisperX model (using GPU)
+model = whisperx.load_model("tiny", device="cuda")
 
-MAX_WORKERS = 3
+# Function to transcribe a single audio file
+def transcribe_audio(filename):
+    audio_path = os.path.join("path/to/audio_files", filename)
+    print(f"Processing {filename}...")
 
-# Global variable for model
-model = None
+    result = model.transcribe(audio_path, batch_size=10)
 
-
-def init_worker():
-    global model
-
-    # Check if CUDA is available
-    if torch.cuda.is_available():
-        DEVICE = "cuda"
-        print("CUDA is available. Using GPU for transcription.")
-    else:
-        DEVICE = "cpu"
-        print("CUDA not available. Falling back to CPU.")
-
-    model = whisperx.load_model(MODEL_SIZE, DEVICE, compute_type="float32")
-
-
-def transcribe_file(filename: str) -> str:
-    global model
-
-    audio_path = os.path.join(AUDIO_DIR, filename)
-    print(f"Transcribing {filename}...")
-
-    result = model.transcribe(audio_path, language="en")
-
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
-    out_path = os.path.join(OUTPUT_DIR, filename + ".txt")
-    with open(out_path, "w", encoding="utf-8") as f:
+    # Save result to a file
+    output_path = os.path.join("path/to/output", filename + ".txt")
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(result["text"])
 
     print(f"Finished {filename}")
     return filename
 
+# Test different number of workers (based on CPU cores)
+def transcribe_parallel(num_workers):
+    files = [f for f in os.listdir("path/to/audio_files") if f.endswith(".mp3")]
 
-def transcribe_parallel(filenames):
-    with ProcessPoolExecutor(max_workers=MAX_WORKERS, initializer=init_worker) as executor:
-        futures = [executor.submit(transcribe_file, fn) for fn in filenames]
+    # Use ProcessPoolExecutor to parallelize transcription
+    with ProcessPoolExecutor(max_workers=num_workers) as executor:
+        futures = [executor.submit(transcribe_audio, filename) for filename in files]
+        for future in futures:
+            print(f"Processed: {future.result()}")
 
-        for future in as_completed(futures):
-            print(future.result())
-
-
-def main():
-    files = [
-        f for f in os.listdir(AUDIO_DIR)
-        if f.lower().endswith(".mp3")
-    ]
-    print("Transcribing audio...")
-    transcribe_parallel(files)
-    print("All transcriptions completed.")
-
-
+# Test with different number of parallel workers
 if __name__ == "__main__":
-    main()
+    num_workers = 8  # Start with 8 workers (equal to your CPU cores)
+    transcribe_parallel(num_workers)
