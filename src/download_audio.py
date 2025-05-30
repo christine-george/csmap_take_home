@@ -60,7 +60,7 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
         The directory where the downloaded MP3 file should be saved.
     """
 
-    id = episode.get("id")
+    episode_id = episode.get("id")
 
     # Get the audio URL from links (if available)
     links = episode.get("links", [])
@@ -72,7 +72,7 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
             break
 
     if audio_url:
-        filepath = os.path.join(download_dir, f"{id}.mp3")
+        filepath = os.path.join(download_dir, f"{episode_id}.mp3")
 
         # Don't re-download an existing MP3
         if os.path.exists(filepath):
@@ -93,7 +93,7 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
         except requests.RequestException as e:
             # If that fails, use curl as a fallback
             try:
-                print(f"requests failed: {e}. Trying with curl for id: {id}")
+                print(f"requests failed: {e}. Trying with curl for id: {episode_id}")
 
                 subprocess.run(
                     ["curl", "-L", "-k", "-o", filepath, audio_url], check=True
@@ -101,10 +101,10 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
                 return f"Saved with curl to: {filepath}\n"
 
             except subprocess.CalledProcessError as curl_err:
-                return f"Failed to download {id} with both requests and curl: {curl_err}\n"
+                return f"Failed to download {episode_id} with both requests and curl: {curl_err}\n"
 
     else:
-        return f"No audio found for episode id: {id}\n"
+        return f"No audio found for episode id: {episode_id}\n"
 
 
 def download_audio_parallel(episode_metadata: List[Dict[str, Any]]):
