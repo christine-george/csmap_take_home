@@ -1,0 +1,1172 @@
+[
+    {
+        "links": [
+            {
+                "href": "https://feeds.megaphone.fm/VMP7924981569",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://thisiscriminal.com/"
+            }
+        ],
+        "title": "Criminal",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/VMP7924981569",
+            "value": "Criminal"
+        },
+        "link": "http://thisiscriminal.com/",
+        "language": "en",
+        "rights": "Copyright 2021, Criminal Productions",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/VMP7924981569",
+            "value": "Copyright 2021, Criminal Productions"
+        },
+        "subtitle": "Criminal is the first of its kind. A show about people who’ve done wrong, been wronged, or gotten caught somewhere in the middle.",
+        "subtitle_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/VMP7924981569",
+            "value": "Criminal is the first of its kind. A show about people who’ve done wrong, been wronged, or gotten caught somewhere in the middle."
+        },
+        "image": {
+            "href": "https://megaphone.imgix.net/podcasts/f547b046-5de4-11ec-acc5-733706bb297f/image/CRIMINAL_3000x3000_v2.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+        },
+        "itunes_explicit": null,
+        "itunes_type": "episodic",
+        "authors": [
+            {
+                "name": "Vox Media Podcast Network",
+                "email": "hello@thisiscriminal.com"
+            }
+        ],
+        "author": "Vox Media Podcast Network",
+        "author_detail": {
+            "name": "Vox Media Podcast Network",
+            "email": "hello@thisiscriminal.com"
+        },
+        "summary": "Criminal is the first of its kind. A show about people who’ve done wrong, been wronged, or gotten caught somewhere in the middle. Hosted by Phoebe Judge. Named a Best Podcast of 2023 by the New York Times. Part of the Vox Media Podcast Network.",
+        "summary_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/VMP7924981569",
+            "value": "Criminal is the first of its kind. A show about people who’ve done wrong, been wronged, or gotten caught somewhere in the middle. Hosted by Phoebe Judge. Named a Best Podcast of 2023 by the New York Times. Part of the Vox Media Podcast Network."
+        },
+        "content": "<p>Criminal is the first of its kind. A show about people who’ve done wrong, been wronged, or gotten caught somewhere in the middle. Hosted by Phoebe Judge. Named a Best Podcast of 2023 by the New York Times. Part of the Vox Media Podcast Network.</p>",
+        "content_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/VMP7924981569",
+            "value": "<p>Criminal is the first of its kind. A show about people who’ve done wrong, been wronged, or gotten caught somewhere in the middle. Hosted by Phoebe Judge. Named a Best Podcast of 2023 by the New York Times. Part of the Vox Media Podcast Network.</p>"
+        },
+        "publisher_detail": {
+            "name": "Vox Media Podcast Network",
+            "email": "hello@thisiscriminal.com"
+        },
+        "tags": [
+            {
+                "term": "Society & Culture",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Documentary",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "True Crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ]
+    },
+    {
+        "title": "Global News Podcast",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
+            "value": "Global News Podcast"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://www.bbc.co.uk/programmes/p02nq0gn"
+            },
+            {
+                "href": "http://www.bbc.co.uk/programmes/p02nq0gn/episodes/downloads.rss",
+                "rel": "self",
+                "type": "application/rss+xml"
+            }
+        ],
+        "link": "http://www.bbc.co.uk/programmes/p02nq0gn",
+        "subtitle": "<p>The breaking news you need to hear, as it happens. \n \nHear the most important global stories from the BBC, the most trusted name in international news. \n \nWith reporters on the ground in every country, we’re always where the story is. We bring you unparalleled access and exclusive updates that you won’t get anywhere else. </p><p>Listen for the latest headlines and current affairs from around the world. From Trump’s White House to Putin’s Kremlin, from the Ukraine War to the Israel-Gaza conflict. From Damascus to Delhi, from Silicon Valley to Singapore, from Washington DC to Wuhan. Politics, economics, climate, business, technology, health – we cover it all with expert analysis and insight.</p><p>Get the news that matters, delivered twice a day on weekdays and daily at weekends, plus special bonus episodes reacting to urgent breaking stories. Subscribe now and never miss a moment.</p><p>Also listen to The Happy Pod, every Saturday, for the best global good news.</p><p>Get in touch: globalpodcast@bbc.co.uk</p>",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
+            "value": "<p>The breaking news you need to hear, as it happens. \n \nHear the most important global stories from the BBC, the most trusted name in international news. \n \nWith reporters on the ground in every country, we’re always where the story is. We bring you unparalleled access and exclusive updates that you won’t get anywhere else. </p><p>Listen for the latest headlines and current affairs from around the world. From Trump’s White House to Putin’s Kremlin, from the Ukraine War to the Israel-Gaza conflict. From Damascus to Delhi, from Silicon Valley to Singapore, from Washington DC to Wuhan. Politics, economics, climate, business, technology, health – we cover it all with expert analysis and insight.</p><p>Get the news that matters, delivered twice a day on weekdays and daily at weekends, plus special bonus episodes reacting to urgent breaking stories. Subscribe now and never miss a moment.</p><p>Also listen to The Happy Pod, every Saturday, for the best global good news.</p><p>Get in touch: globalpodcast@bbc.co.uk</p>"
+        },
+        "summary": "<p>The breaking news you need to hear, as it happens. \n \nHear the most important global stories from the BBC, the most trusted name in international news. \n \nWith reporters on the ground in every country, we’re always where the story is. We bring you unparalleled access and exclusive updates that you won’t get anywhere else. </p><p>Listen for the latest headlines and current affairs from around the world. From Trump’s White House to Putin’s Kremlin, from the Ukraine War to the Israel-Gaza conflict. From Damascus to Delhi, from Silicon Valley to Singapore, from Washington DC to Wuhan. Politics, economics, climate, business, technology, health – we cover it all with expert analysis and insight.</p><p>Get the news that matters, delivered twice a day on weekdays and daily at weekends, plus special bonus episodes reacting to urgent breaking stories. Subscribe now and never miss a moment.</p><p>Also listen to The Happy Pod, every Saturday, for the best global good news.</p><p>Get in touch: globalpodcast@bbc.co.uk</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
+            "value": "<p>The breaking news you need to hear, as it happens. \n \nHear the most important global stories from the BBC, the most trusted name in international news. \n \nWith reporters on the ground in every country, we’re always where the story is. We bring you unparalleled access and exclusive updates that you won’t get anywhere else. </p><p>Listen for the latest headlines and current affairs from around the world. From Trump’s White House to Putin’s Kremlin, from the Ukraine War to the Israel-Gaza conflict. From Damascus to Delhi, from Silicon Valley to Singapore, from Washington DC to Wuhan. Politics, economics, climate, business, technology, health – we cover it all with expert analysis and insight.</p><p>Get the news that matters, delivered twice a day on weekdays and daily at weekends, plus special bonus episodes reacting to urgent breaking stories. Subscribe now and never miss a moment.</p><p>Also listen to The Happy Pod, every Saturday, for the best global good news.</p><p>Get in touch: globalpodcast@bbc.co.uk</p>"
+        },
+        "authors": [
+            {
+                "name": "BBC",
+                "email": "podcast.support@bbc.co.uk"
+            }
+        ],
+        "author": "BBC",
+        "author_detail": {
+            "name": "BBC",
+            "email": "podcast.support@bbc.co.uk"
+        },
+        "itunes_type": "episodic",
+        "publisher_detail": {
+            "name": "BBC",
+            "email": "podcast.support@bbc.co.uk"
+        },
+        "itunes_new-feed-url": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
+        "language": "en",
+        "ppg_seriesdetails": {
+            "frequency": "daily",
+            "dayslive": "30"
+        },
+        "ppg_systemref": {
+            "systemid": "pid.format",
+            "key": "PT017"
+        },
+        "ppg_network": {
+            "id": "worldserviceradio",
+            "name": "BBC World Service"
+        },
+        "image": {
+            "href": "http://ichef.bbci.co.uk/images/ic/3000x3000/p09kz1gg.jpg"
+        },
+        "rights": "(C) BBC 2025",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://podcasts.files.bbci.co.uk/p02nq0gn.rss",
+            "value": "(C) BBC 2025"
+        },
+        "published": "Thu, 29 May 2025 14:15:00 +0000",
+        "published_parsed": [
+            2025,
+            5,
+            29,
+            14,
+            15,
+            0,
+            3,
+            149,
+            0
+        ],
+        "tags": [
+            {
+                "term": "News",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Daily News",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "itunes_explicit": null,
+        "media_rating": {
+            "scheme": "urn:simple",
+            "content": "nonadult"
+        },
+        "rating": "nonadult"
+    },
+    {
+        "links": [
+            {
+                "href": "https://feeds.simplecast.com/zatU8XEL",
+                "rel": "self",
+                "title": "MP3 Audio",
+                "type": "application/atom+xml"
+            },
+            {
+                "href": "https://simplecast.superfeedr.com",
+                "rel": "hub",
+                "type": "text/html"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://www.stitcher.com"
+            }
+        ],
+        "generator_detail": {
+            "name": "https://simplecast.com"
+        },
+        "generator": "https://simplecast.com",
+        "title": "True Crime Garage",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.simplecast.com/zatU8XEL",
+            "value": "True Crime Garage"
+        },
+        "subtitle": "Hosts Nic and the Captain invite you to grab a chair, grab a beer and join them as they talk some true crime. This is no ordinary garage: it’s a rabbit hole of true crime, with a generous supply of alcohol and banter to lighten the load. From international atrocities to heinous stories on (US) home turf, dive head-first into a different case each week, and enjoy a cold one whilst your there. \n\n\n\n\nIf you consider yourself an armchair detective, you’re in the right place, and you’re amongst friends. For the mystery-seeker, True Crime Garage presents an archive of missing persons, unsolved and cold cases, plus accounts of infamous serial killers and chilling solved cases. \n\n\n\n\nTrue Crime Garage has just one rule: don’t litter. Remember to not take yourself too seriously because if you do, nobody else will. \n\n\n\n\nMissing persons (including):\n\n\n\n\nMaura Murray \n\nBrandon Lawson \n\nAsha Degree\n\nWiliam Tyrell\n\nEmma Fillipoff\n\nBrian Shaffer\n\nJaliek Rainwalker \n\nMadeleine McCann\n\nJennifer Kesse\n\n\n\n\nUnsolved cases (including):\n\n\n\n\nMitrice Richardson \n\nKendrick Johnson\n\nJonBenet Ramsey\n\nThe Delphi murders\n\nOJ Simpson\n\nThe Tylenol Murders \n\nElisa Lam\n\nThe Photo: Kris Kremers and Lisanne Froon \n\nThe West Memphis 3 \n\nAmy Mihaljevic\n\n\n\n\n\n\n\nSerial killers (including):\n\n\n\n\nThe Long Island Serial Killer (LISK)\n\nZodiac \n\nTed Bundy\n\nThe Backpacker: Ivan Milat \n\nBTK: Dennis Rader\n\nJohn Wayne Gacy \n\nJeffrey Dahmer \n\nEdmund Kemper\n\nEd Gein\n\n\n\n\nSolved cases (including):\n\n\n\n\nChris Watts\n\nThe Unabomber \n\nJohn Lennon \n\nScott Peterson\n\nSon of Sam\n\nColumbine\n\nRoom 309: Sidney Teerhuis-Moar\n\nKenneka Jenkins\n\nRae Carruth",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://feeds.simplecast.com/zatU8XEL",
+            "value": "Hosts Nic and the Captain invite you to grab a chair, grab a beer and join them as they talk some true crime. This is no ordinary garage: it’s a rabbit hole of true crime, with a generous supply of alcohol and banter to lighten the load. From international atrocities to heinous stories on (US) home turf, dive head-first into a different case each week, and enjoy a cold one whilst your there. \n\n\n\n\nIf you consider yourself an armchair detective, you’re in the right place, and you’re amongst friends. For the mystery-seeker, True Crime Garage presents an archive of missing persons, unsolved and cold cases, plus accounts of infamous serial killers and chilling solved cases. \n\n\n\n\nTrue Crime Garage has just one rule: don’t litter. Remember to not take yourself too seriously because if you do, nobody else will. \n\n\n\n\nMissing persons (including):\n\n\n\n\nMaura Murray \n\nBrandon Lawson \n\nAsha Degree\n\nWiliam Tyrell\n\nEmma Fillipoff\n\nBrian Shaffer\n\nJaliek Rainwalker \n\nMadeleine McCann\n\nJennifer Kesse\n\n\n\n\nUnsolved cases (including):\n\n\n\n\nMitrice Richardson \n\nKendrick Johnson\n\nJonBenet Ramsey\n\nThe Delphi murders\n\nOJ Simpson\n\nThe Tylenol Murders \n\nElisa Lam\n\nThe Photo: Kris Kremers and Lisanne Froon \n\nThe West Memphis 3 \n\nAmy Mihaljevic\n\n\n\n\n\n\n\nSerial killers (including):\n\n\n\n\nThe Long Island Serial Killer (LISK)\n\nZodiac \n\nTed Bundy\n\nThe Backpacker: Ivan Milat \n\nBTK: Dennis Rader\n\nJohn Wayne Gacy \n\nJeffrey Dahmer \n\nEdmund Kemper\n\nEd Gein\n\n\n\n\nSolved cases (including):\n\n\n\n\nChris Watts\n\nThe Unabomber \n\nJohn Lennon \n\nScott Peterson\n\nSon of Sam\n\nColumbine\n\nRoom 309: Sidney Teerhuis-Moar\n\nKenneka Jenkins\n\nRae Carruth"
+        },
+        "rights": "2024 TRUE CRIME GARAGE",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.simplecast.com/zatU8XEL",
+            "value": "2024 TRUE CRIME GARAGE"
+        },
+        "language": "en-us",
+        "published": "Tue, 27 May 2025 23:00:00 +0000",
+        "published_parsed": [
+            2025,
+            5,
+            27,
+            23,
+            0,
+            0,
+            1,
+            147,
+            0
+        ],
+        "updated": "Tue, 27 May 2025 23:00:22 +0000",
+        "updated_parsed": [
+            2025,
+            5,
+            27,
+            23,
+            0,
+            22,
+            1,
+            147,
+            0
+        ],
+        "image": {
+            "href": "https://image.simplecastcdn.com/images/20b232f5-ee6a-4911-916b-a6b2a7854848/a963bf0a-0c9d-41fd-b41d-4a035c34ad0f/3000x3000/image.jpg?aid=rss_feed"
+        },
+        "link": "https://www.stitcher.com",
+        "itunes_type": "episodic",
+        "summary": "Hosts Nic and the Captain invite you to grab a chair, grab a beer and join them as they talk some true crime. This is no ordinary garage: it’s a rabbit hole of true crime, with a generous supply of alcohol and banter to lighten the load. From international atrocities to heinous stories on (US) home turf, dive head-first into a different case each week, and enjoy a cold one whilst your there. \n\n\n\n\nIf you consider yourself an armchair detective, you’re in the right place, and you’re amongst friends. For the mystery-seeker, True Crime Garage presents an archive of missing persons, unsolved and cold cases, plus accounts of infamous serial killers and chilling solved cases. \n\n\n\n\nTrue Crime Garage has just one rule: don’t litter. Remember to not take yourself too seriously because if you do, nobody else will. \n\n\n\n\nMissing persons (including):\n\n\n\n\nMaura Murray \n\nBrandon Lawson \n\nAsha Degree\n\nWiliam Tyrell\n\nEmma Fillipoff\n\nBrian Shaffer\n\nJaliek Rainwalker \n\nMadeleine McCann\n\nJennifer Kesse\n\n\n\n\nUnsolved cases (including):\n\n\n\n\nMitrice Richardson \n\nKendrick Johnson\n\nJonBenet Ramsey\n\nThe Delphi murders\n\nOJ Simpson\n\nThe Tylenol Murders \n\nElisa Lam\n\nThe Photo: Kris Kremers and Lisanne Froon \n\nThe West Memphis 3 \n\nAmy Mihaljevic\n\n\n\n\n\n\n\nSerial killers (including):\n\n\n\n\nThe Long Island Serial Killer (LISK)\n\nZodiac \n\nTed Bundy\n\nThe Backpacker: Ivan Milat \n\nBTK: Dennis Rader\n\nJohn Wayne Gacy \n\nJeffrey Dahmer \n\nEdmund Kemper\n\nEd Gein\n\n\n\n\nSolved cases (including):\n\n\n\n\nChris Watts\n\nThe Unabomber \n\nJohn Lennon \n\nScott Peterson\n\nSon of Sam\n\nColumbine\n\nRoom 309: Sidney Teerhuis-Moar\n\nKenneka Jenkins\n\nRae Carruth",
+        "summary_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.simplecast.com/zatU8XEL",
+            "value": "Hosts Nic and the Captain invite you to grab a chair, grab a beer and join them as they talk some true crime. This is no ordinary garage: it’s a rabbit hole of true crime, with a generous supply of alcohol and banter to lighten the load. From international atrocities to heinous stories on (US) home turf, dive head-first into a different case each week, and enjoy a cold one whilst your there. \n\n\n\n\nIf you consider yourself an armchair detective, you’re in the right place, and you’re amongst friends. For the mystery-seeker, True Crime Garage presents an archive of missing persons, unsolved and cold cases, plus accounts of infamous serial killers and chilling solved cases. \n\n\n\n\nTrue Crime Garage has just one rule: don’t litter. Remember to not take yourself too seriously because if you do, nobody else will. \n\n\n\n\nMissing persons (including):\n\n\n\n\nMaura Murray \n\nBrandon Lawson \n\nAsha Degree\n\nWiliam Tyrell\n\nEmma Fillipoff\n\nBrian Shaffer\n\nJaliek Rainwalker \n\nMadeleine McCann\n\nJennifer Kesse\n\n\n\n\nUnsolved cases (including):\n\n\n\n\nMitrice Richardson \n\nKendrick Johnson\n\nJonBenet Ramsey\n\nThe Delphi murders\n\nOJ Simpson\n\nThe Tylenol Murders \n\nElisa Lam\n\nThe Photo: Kris Kremers and Lisanne Froon \n\nThe West Memphis 3 \n\nAmy Mihaljevic\n\n\n\n\n\n\n\nSerial killers (including):\n\n\n\n\nThe Long Island Serial Killer (LISK)\n\nZodiac \n\nTed Bundy\n\nThe Backpacker: Ivan Milat \n\nBTK: Dennis Rader\n\nJohn Wayne Gacy \n\nJeffrey Dahmer \n\nEdmund Kemper\n\nEd Gein\n\n\n\n\nSolved cases (including):\n\n\n\n\nChris Watts\n\nThe Unabomber \n\nJohn Lennon \n\nScott Peterson\n\nSon of Sam\n\nColumbine\n\nRoom 309: Sidney Teerhuis-Moar\n\nKenneka Jenkins\n\nRae Carruth"
+        },
+        "authors": [
+            {
+                "name": "TRUE CRIME GARAGE",
+                "email": "truecrimegarage@gmail.com"
+            }
+        ],
+        "author": "TRUE CRIME GARAGE",
+        "author_detail": {
+            "name": "TRUE CRIME GARAGE",
+            "email": "truecrimegarage@gmail.com"
+        },
+        "itunes_explicit": null,
+        "itunes_new-feed-url": "https://feeds.simplecast.com/zatU8XEL",
+        "tags": [
+            {
+                "term": "missing",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "best true crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "morbid",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "junkie",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "my favorite murder",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "true story",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "crime junkie",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "true crime junkie",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "tcg",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "missing person",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "murder",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "true crime garage",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "True Crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "News",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Society & Culture",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "publisher_detail": {
+            "name": "TRUE CRIME GARAGE",
+            "email": "truecrimegarage@gmail.com"
+        }
+    },
+    {
+        "title": "New Heights with Jason & Travis Kelce",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://rss.art19.com/new-heights",
+            "value": "New Heights with Jason & Travis Kelce"
+        },
+        "subtitle": "<p>Football’s funniest family duo — Jason Kelce of the Philadelphia Eagles and Travis Kelce of the Kansas City Chiefs — team up to provide next-level access to life in the league as it unfolds. The two brothers and Super Bowl champions drop weekly insights about the weekly slate of games and share their INSIDE perspectives on trending NFL news and sports headlines. They also endlessly rag on each other as brothers do, chat the latest in pop culture and welcome some very popular and well-known friends to chat with them.</p><p><br /></p><p>Check out new episodes every Wednesday. Follow New Heights on the Wondery App, YouTube or wherever you get your podcasts. You can listen to new episodes early and ad-free, and get exclusive content on Wondery+. Join Wondery+ in the Wondery App, Apple Podcasts or Spotify. And join our new membership for a unique fan experience by going to the New Heights YouTube channel now!</p>",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://rss.art19.com/new-heights",
+            "value": "<p>Football’s funniest family duo — Jason Kelce of the Philadelphia Eagles and Travis Kelce of the Kansas City Chiefs — team up to provide next-level access to life in the league as it unfolds. The two brothers and Super Bowl champions drop weekly insights about the weekly slate of games and share their INSIDE perspectives on trending NFL news and sports headlines. They also endlessly rag on each other as brothers do, chat the latest in pop culture and welcome some very popular and well-known friends to chat with them.</p><p><br /></p><p>Check out new episodes every Wednesday. Follow New Heights on the Wondery App, YouTube or wherever you get your podcasts. You can listen to new episodes early and ad-free, and get exclusive content on Wondery+. Join Wondery+ in the Wondery App, Apple Podcasts or Spotify. And join our new membership for a unique fan experience by going to the New Heights YouTube channel now!</p>"
+        },
+        "authors": [
+            {
+                "name": "Wondery",
+                "email": "NewHeightshow@gmail.com"
+            },
+            {
+                "name": "Wondery"
+            }
+        ],
+        "author": "Wondery",
+        "author_detail": {
+            "name": "Wondery",
+            "email": "NewHeightshow@gmail.com"
+        },
+        "generator_detail": {
+            "name": "ART19"
+        },
+        "generator": "ART19",
+        "links": [
+            {
+                "href": "https://rss.art19.com/new-heights",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://hoo.be/newheightshow"
+            }
+        ],
+        "link": "http://hoo.be/newheightshow",
+        "publisher_detail": {
+            "name": "Wondery",
+            "email": "NewHeightshow@gmail.com"
+        },
+        "summary": "<p>Football’s funniest family duo — Jason Kelce of the Philadelphia Eagles and Travis Kelce of the Kansas City Chiefs — team up to provide next-level access to life in the league as it unfolds. The two brothers and Super Bowl champions drop weekly insights about the weekly slate of games and share their INSIDE perspectives on trending NFL news and sports headlines. They also endlessly rag on each other as brothers do, chat the latest in pop culture and welcome some very popular and well-known friends to chat with them.</p><p><br /></p><p>Check out new episodes every Wednesday. Follow New Heights on the Wondery App, YouTube or wherever you get your podcasts. You can listen to new episodes early and ad-free, and get exclusive content on Wondery+. Join Wondery+ in the Wondery App, Apple Podcasts or Spotify. And join our new membership for a unique fan experience by going to the New Heights YouTube channel now!</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://rss.art19.com/new-heights",
+            "value": "<p>Football’s funniest family duo — Jason Kelce of the Philadelphia Eagles and Travis Kelce of the Kansas City Chiefs — team up to provide next-level access to life in the league as it unfolds. The two brothers and Super Bowl champions drop weekly insights about the weekly slate of games and share their INSIDE perspectives on trending NFL news and sports headlines. They also endlessly rag on each other as brothers do, chat the latest in pop culture and welcome some very popular and well-known friends to chat with them.</p><p><br /></p><p>Check out new episodes every Wednesday. Follow New Heights on the Wondery App, YouTube or wherever you get your podcasts. You can listen to new episodes early and ad-free, and get exclusive content on Wondery+. Join Wondery+ in the Wondery App, Apple Podcasts or Spotify. And join our new membership for a unique fan experience by going to the New Heights YouTube channel now!</p>"
+        },
+        "language": "en",
+        "itunes_explicit": true,
+        "tags": [
+            {
+                "term": "Sports",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Comedy",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "itunes_type": "episodic",
+        "image": {
+            "href": "https://content.production.cdn.art19.com/images/a3/40/e1/9f/a340e19f-b020-4654-ac02-e1ddc502cb54/48964ccb9db66b05ef13a11691828975251cd90e4c75b16f062b1bdf9e364e9ca1b07d1ffe96ee0b7ce81794b9b649c50556eacc387091ad962f33570b23bd2c.jpeg",
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "http://hoo.be/newheightshow"
+                }
+            ],
+            "link": "http://hoo.be/newheightshow",
+            "title": "New Heights with Jason & Travis Kelce",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "https://rss.art19.com/new-heights",
+                "value": "New Heights with Jason & Travis Kelce"
+            }
+        }
+    },
+    {
+        "links": [
+            {
+                "href": "https://holdthesetruthswithdancrenshaw.libsyn.com/rss",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://crenshaw.house.gov/"
+            }
+        ],
+        "title": "Hold These Truths with Dan Crenshaw",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://holdthesetruthswithdancrenshaw.libsyn.com/rss",
+            "value": "Hold These Truths with Dan Crenshaw"
+        },
+        "published": "Thu, 22 May 2025 16:52:00 +0000",
+        "published_parsed": [
+            2025,
+            5,
+            22,
+            16,
+            52,
+            0,
+            3,
+            142,
+            0
+        ],
+        "updated": "Thu, 29 May 2025 17:12:36 +0000",
+        "updated_parsed": [
+            2025,
+            5,
+            29,
+            17,
+            12,
+            36,
+            3,
+            149,
+            0
+        ],
+        "generator_detail": {
+            "name": "Libsyn WebEngine 2.0"
+        },
+        "generator": "Libsyn WebEngine 2.0",
+        "link": "https://crenshaw.house.gov/",
+        "language": "en",
+        "rights": "Public Domain",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://holdthesetruthswithdancrenshaw.libsyn.com/rss",
+            "value": "Public Domain"
+        },
+        "docs": "https://crenshaw.house.gov/",
+        "authors": [
+            {
+                "email": "danny.walden@mail.house.gov"
+            },
+            {
+                "name": "Dan Crenshaw",
+                "email": "danny.walden@mail.house.gov"
+            }
+        ],
+        "author": "Dan Crenshaw",
+        "author_detail": {
+            "email": "danny.walden@mail.house.gov"
+        },
+        "summary": "Congressman Dan Crenshaw joins the world's leading experts for deep and insightful conversations about the most important issues facing us today.",
+        "summary_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://holdthesetruthswithdancrenshaw.libsyn.com/rss",
+            "value": "Congressman Dan Crenshaw joins the world's leading experts for deep and insightful conversations about the most important issues facing us today."
+        },
+        "image": {
+            "href": "https://static.libsyn.com/p/assets/e/3/9/2/e3927079d632ef7d27a2322813b393ee/Hold_These_Truths_Thumbnail_1x1.jpg"
+        },
+        "tags": [
+            {
+                "term": "America",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Freedom",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Healthcare",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "energy",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "finance",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "news",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "politics",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "regulations",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "world",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "News",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Politics",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Society & Culture",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "itunes_explicit": null,
+        "publisher_detail": {
+            "name": "Dan Crenshaw",
+            "email": "danny.walden@mail.house.gov"
+        },
+        "content": "Congressman Dan Crenshaw joins the world's leading experts for deep and insightful conversations about the most important issues facing us today.",
+        "content_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://holdthesetruthswithdancrenshaw.libsyn.com/rss",
+            "value": "Congressman Dan Crenshaw joins the world's leading experts for deep and insightful conversations about the most important issues facing us today."
+        },
+        "itunes_type": "episodic",
+        "podcast_locked": {
+            "owner": "danny.walden@mail.house.gov"
+        }
+    },
+    {
+        "links": [
+            {
+                "href": "https://feeds.megaphone.fm/STM4306131571",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://wondery.com/shows/stories-podcast/?utm_source=rss"
+            }
+        ],
+        "title": "Stories Podcast: A Bedtime Show for Kids of All Ages",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/STM4306131571",
+            "value": "Stories Podcast: A Bedtime Show for Kids of All Ages"
+        },
+        "link": "https://wondery.com/shows/stories-podcast/?utm_source=rss",
+        "language": "en",
+        "rights": "© Stories Podcast 2019",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/STM4306131571",
+            "value": "© Stories Podcast 2019"
+        },
+        "subtitle": "",
+        "subtitle_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/STM4306131571",
+            "value": ""
+        },
+        "image": {
+            "href": "https://megaphone.imgix.net/podcasts/ab251c42-5fcb-11ef-a0f6-e7c1506b46d7/image/9a508007ad1891ba3ce3b5a868824163.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+        },
+        "itunes_explicit": null,
+        "itunes_type": "episodic",
+        "authors": [
+            {
+                "name": "Stories Podcast / Wondery",
+                "email": "dan@storiespodcast.com"
+            }
+        ],
+        "author": "Stories Podcast / Wondery",
+        "author_detail": {
+            "name": "Stories Podcast / Wondery",
+            "email": "dan@storiespodcast.com"
+        },
+        "summary": "On the Stories Podcast, we perform a new story for your children every week. The stories range from retellings of fairy tales like Snow White to classic stories like Peter Rabbit and even completely original works. Everything is G rated and safe for all ages. The perfect kids podcast for imaginative families. Whether you’re driving with your children or just want to limit your kids’ screen time, Stories Podcast delivers entertainment that kids and parents alike will love.",
+        "summary_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/STM4306131571",
+            "value": "On the Stories Podcast, we perform a new story for your children every week. The stories range from retellings of fairy tales like Snow White to classic stories like Peter Rabbit and even completely original works. Everything is G rated and safe for all ages. The perfect kids podcast for imaginative families. Whether you’re driving with your children or just want to limit your kids’ screen time, Stories Podcast delivers entertainment that kids and parents alike will love."
+        },
+        "content": "<p>On the Stories Podcast, we perform a new story for your children every week. The stories range from retellings of fairy tales like Snow White to classic stories like Peter Rabbit and even completely original works. Everything is G rated and safe for all ages. The perfect kids podcast for imaginative families. Whether you’re driving with your children or just want to limit your kids’ screen time, Stories Podcast delivers entertainment that kids and parents alike will love.</p>",
+        "content_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/STM4306131571",
+            "value": "<p>On the Stories Podcast, we perform a new story for your children every week. The stories range from retellings of fairy tales like Snow White to classic stories like Peter Rabbit and even completely original works. Everything is G rated and safe for all ages. The perfect kids podcast for imaginative families. Whether you’re driving with your children or just want to limit your kids’ screen time, Stories Podcast delivers entertainment that kids and parents alike will love.</p>"
+        },
+        "publisher_detail": {
+            "name": "Stories Podcast / Wondery",
+            "email": "dan@storiespodcast.com"
+        },
+        "tags": [
+            {
+                "term": "Kids & Family",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Stories for Kids",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Fiction",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "itunes_new-feed-url": "https://feeds.megaphone.fm/STM4306131571"
+    },
+    {
+        "title": "Fresh Air",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.npr.org/381444908/podcast.xml",
+            "value": "Fresh Air"
+        },
+        "links": [
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://www.npr.org/podcasts/381444908/fresh-air"
+            }
+        ],
+        "link": "https://www.npr.org/podcasts/381444908/fresh-air",
+        "subtitle": "Fresh Air from WHYY, the Peabody Award-winning weekday magazine of contemporary arts and issues, is one of public radio's most popular programs. Hosted by Terry Gross and Tonya Mosley, the show features intimate conversations with today's biggest luminaries. <br /><br />Subscribe to Fresh Air Plus! You'll enjoy bonus episodes and sponsor-free listening - all while you support NPR's mission. Learn more at plus.npr.org/freshair <br /><br />And subscribe to our weekly newsletter, Fresh Air Weekly, to get interview highlights, staff recommendations, gems from the archive, and the week's interviews and reviews all in one place. Sign up at www.whyy.org/freshair",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://feeds.npr.org/381444908/podcast.xml",
+            "value": "Fresh Air from WHYY, the Peabody Award-winning weekday magazine of contemporary arts and issues, is one of public radio's most popular programs. Hosted by Terry Gross and Tonya Mosley, the show features intimate conversations with today's biggest luminaries. <br /><br />Subscribe to Fresh Air Plus! You'll enjoy bonus episodes and sponsor-free listening - all while you support NPR's mission. Learn more at plus.npr.org/freshair <br /><br />And subscribe to our weekly newsletter, Fresh Air Weekly, to get interview highlights, staff recommendations, gems from the archive, and the week's interviews and reviews all in one place. Sign up at www.whyy.org/freshair"
+        },
+        "rights": "Copyright 2015-2021 WHYY - For Personal Use Only",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.npr.org/381444908/podcast.xml",
+            "value": "Copyright 2015-2021 WHYY - For Personal Use Only"
+        },
+        "generator_detail": {
+            "name": "NPR Feed Publish Service v2.0.12"
+        },
+        "generator": "NPR Feed Publish Service v2.0.12",
+        "language": "en",
+        "authors": [
+            {
+                "name": "NPR",
+                "email": "podcasts@npr.org"
+            }
+        ],
+        "author": "NPR (podcasts@npr.org)",
+        "author_detail": {
+            "name": "NPR",
+            "email": "podcasts@npr.org"
+        },
+        "itunes_block": 0,
+        "publisher_detail": {
+            "email": "podcasts@npr.org",
+            "name": "NPR"
+        },
+        "tags": [
+            {
+                "term": "Arts",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Books",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Society & Culture",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "TV & Film",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "media_thumbnail": [
+            {
+                "url": "https://media.npr.org/assets/img/2022/06/14/npr_freshair_podcasttile-01_wide-2e6564b52f241cd2404745deaffad832430b080c.jpg?s=2988&c=66&f=jpg",
+                "height": "1680",
+                "width": "2988"
+            }
+        ],
+        "href": "",
+        "image": {
+            "href": "https://media.npr.org/assets/img/2022/09/23/fresh-air_tile_npr-network-01_sq-a6f7c547c8e78b8230edc7fc3c32005de3756e0d.jpg?s=1400&c=66&f=jpg",
+            "title": "Fresh Air",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "https://feeds.npr.org/381444908/podcast.xml",
+                "value": "Fresh Air"
+            },
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://www.npr.org/podcasts/381444908/fresh-air"
+                }
+            ],
+            "link": "https://www.npr.org/podcasts/381444908/fresh-air"
+        },
+        "itunes_type": "episodic",
+        "updated": "Thu, 29 May 2025 19:02:36 +0000",
+        "updated_parsed": [
+            2025,
+            5,
+            29,
+            19,
+            2,
+            36,
+            3,
+            149,
+            0
+        ],
+        "media_restriction": {
+            "type": "country",
+            "relationship": "allow",
+            "content": [
+                "us"
+            ]
+        },
+        "restriction": "us"
+    },
+    {
+        "links": [
+            {
+                "href": "https://feeds.megaphone.fm/h3podcast",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "http://www.h3h3productions.com/"
+            }
+        ],
+        "title": "H3 Podcast",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/h3podcast",
+            "value": "H3 Podcast"
+        },
+        "link": "http://www.h3h3productions.com/",
+        "language": "en-us",
+        "rights": "Copyright 2017 H3 Podcast",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/h3podcast",
+            "value": "Copyright 2017 H3 Podcast"
+        },
+        "subtitle": "H3 Podcast hosted by Ethan Klein",
+        "subtitle_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/h3podcast",
+            "value": "H3 Podcast hosted by Ethan Klein"
+        },
+        "image": {
+            "href": "https://megaphone.imgix.net/podcasts/0214c2b6-e5a2-11eb-9b5f-db8f4937453a/image/7baacbd71893f1db288a329f0980660c.png?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+        },
+        "itunes_explicit": true,
+        "itunes_type": "episodic",
+        "authors": [
+            {
+                "name": "Ethan Klein",
+                "email": "podcast@h3h3productions.com"
+            }
+        ],
+        "author": "Ethan Klein",
+        "author_detail": {
+            "name": "Ethan Klein",
+            "email": "podcast@h3h3productions.com"
+        },
+        "summary": "The official podcast of comedians Ethan & Hila Klein of h3h3productions.",
+        "summary_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/h3podcast",
+            "value": "The official podcast of comedians Ethan & Hila Klein of h3h3productions."
+        },
+        "content": "<p>The official podcast of comedians Ethan &amp; Hila Klein of h3h3productions.</p>",
+        "content_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/h3podcast",
+            "value": "<p>The official podcast of comedians Ethan &amp; Hila Klein of h3h3productions.</p>"
+        },
+        "publisher_detail": {
+            "name": "Ethan Klein",
+            "email": "podcast@h3h3productions.com"
+        },
+        "tags": [
+            {
+                "term": "Comedy",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ]
+    },
+    {
+        "title": "The Generation Why Podcast",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://rss.art19.com/generation-why-podcast",
+            "value": "The Generation Why Podcast"
+        },
+        "subtitle": "<p>The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Two friends, Aaron &amp; Justin, break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies.</p><p>Need more Generation Why? With Wondery+, enjoy exclusive episodes and always listen ad-free. Join Wondery+ in the Wondery App, Apple Podcasts, or Spotify. Start your free trial by visiting&nbsp;<a href=\"http://wondery.com/links/generation-why/\" rel=\"noopener noreferrer\" target=\"_blank\">wondery.com/links/generation-why/</a> now.</p>",
+        "subtitle_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://rss.art19.com/generation-why-podcast",
+            "value": "<p>The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Two friends, Aaron &amp; Justin, break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies.</p><p>Need more Generation Why? With Wondery+, enjoy exclusive episodes and always listen ad-free. Join Wondery+ in the Wondery App, Apple Podcasts, or Spotify. Start your free trial by visiting&nbsp;<a href=\"http://wondery.com/links/generation-why/\" rel=\"noopener noreferrer\" target=\"_blank\">wondery.com/links/generation-why/</a> now.</p>"
+        },
+        "authors": [
+            {
+                "name": "Wondery",
+                "email": "genwhypod@gmail.com"
+            },
+            {
+                "name": "Wondery"
+            }
+        ],
+        "author": "Wondery",
+        "author_detail": {
+            "name": "Wondery",
+            "email": "genwhypod@gmail.com"
+        },
+        "rights": "© © 2021 Wondery LLC. All rights reserved.",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://rss.art19.com/generation-why-podcast",
+            "value": "© © 2021 Wondery LLC. All rights reserved."
+        },
+        "generator_detail": {
+            "name": "ART19"
+        },
+        "generator": "ART19",
+        "links": [
+            {
+                "href": "https://rss.art19.com/generation-why-podcast",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://wondery.com/shows/generation-why/"
+            }
+        ],
+        "link": "https://wondery.com/shows/generation-why/",
+        "publisher_detail": {
+            "name": "Wondery",
+            "email": "genwhypod@gmail.com"
+        },
+        "summary": "<p>The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Two friends, Aaron &amp; Justin, break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies.</p><p>Need more Generation Why? With Wondery+, enjoy exclusive episodes and always listen ad-free. Join Wondery+ in the Wondery App, Apple Podcasts, or Spotify. Start your free trial by visiting&nbsp;<a href=\"http://wondery.com/links/generation-why/\" rel=\"noopener noreferrer\" target=\"_blank\">wondery.com/links/generation-why/</a> now.</p>",
+        "summary_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://rss.art19.com/generation-why-podcast",
+            "value": "<p>The Generation Why Podcast released its first episode in 2012 and pioneered the true crime genre in the podcasting world. Two friends, Aaron &amp; Justin, break down theories and give their opinions on unsolved murders, controversies, mysteries and conspiracies.</p><p>Need more Generation Why? With Wondery+, enjoy exclusive episodes and always listen ad-free. Join Wondery+ in the Wondery App, Apple Podcasts, or Spotify. Start your free trial by visiting&nbsp;<a href=\"http://wondery.com/links/generation-why/\" rel=\"noopener noreferrer\" target=\"_blank\">wondery.com/links/generation-why/</a> now.</p>"
+        },
+        "language": "en",
+        "itunes_explicit": true,
+        "tags": [
+            {
+                "term": "True Crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Society & Culture",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Documentary",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Exhibit C",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "855520",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "conspiracies",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Conspiracy",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "controversy",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Government",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "trial",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "UNSOLVED",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "murder",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "missing person",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "serial killer",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "true crime",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "case",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ],
+        "itunes_type": "episodic",
+        "image": {
+            "href": "https://content.production.cdn.art19.com/images/42/b2/fb/3c/42b2fb3c-7d12-4aef-af94-5852e7d0a0d9/751bf16b168d18c942676b1e3109e334fb0a69d11cb3d8ea449238f78f576b353b8c67d74297ce64704cb000a34809209efbb8c85138660268f9ce87bccca1ff.jpeg",
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://wondery.com/shows/generation-why/"
+                }
+            ],
+            "link": "https://wondery.com/shows/generation-why/",
+            "title": "The Generation Why Podcast",
+            "title_detail": {
+                "type": "text/plain",
+                "language": null,
+                "base": "https://rss.art19.com/generation-why-podcast",
+                "value": "The Generation Why Podcast"
+            }
+        }
+    },
+    {
+        "links": [
+            {
+                "href": "https://feeds.megaphone.fm/WWO7410387571",
+                "rel": "self",
+                "type": "application/rss+xml"
+            },
+            {
+                "rel": "alternate",
+                "type": "text/html",
+                "href": "https://feeds.megaphone.fm/shawnryanshow.com"
+            }
+        ],
+        "title": "Shawn Ryan Show",
+        "title_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/WWO7410387571",
+            "value": "Shawn Ryan Show"
+        },
+        "link": "https://feeds.megaphone.fm/shawnryanshow.com",
+        "language": "en-us",
+        "rights": "© 2024 Shawn Ryan Show",
+        "rights_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/WWO7410387571",
+            "value": "© 2024 Shawn Ryan Show"
+        },
+        "subtitle": "The \"Shawn Ryan Show\" is hosted by Shawn Ryan, former U.S. Navy SEAL, CIA Contractor, and Founder of Vigilance Elite.",
+        "subtitle_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/WWO7410387571",
+            "value": "The \"Shawn Ryan Show\" is hosted by Shawn Ryan, former U.S. Navy SEAL, CIA Contractor, and Founder of Vigilance Elite."
+        },
+        "image": {
+            "href": "https://megaphone.imgix.net/podcasts/c8f5c08a-65ec-11ed-9372-0ba8e8e7be01/image/db5ccecdf2c7562d03db681d37d4c9b1.jpg?ixlib=rails-4.3.1&max-w=3000&max-h=3000&fit=crop&auto=format,compress"
+        },
+        "itunes_explicit": true,
+        "itunes_type": "episodic",
+        "authors": [
+            {
+                "name": "Shawn Ryan Show",
+                "email": "operations@vigilanceelite.com"
+            }
+        ],
+        "author": "Shawn Ryan Show",
+        "author_detail": {
+            "name": "Shawn Ryan Show",
+            "email": "operations@vigilanceelite.com"
+        },
+        "summary": "The \"Shawn Ryan Show\" is hosted by Shawn Ryan, former U.S. Navy SEAL, CIA Contractor, and Founder of Vigilance Elite. We tell REAL stories about REAL people from all walks of life. We discuss the ups and downs, wins and losses, successes and struggles, the good and bad in a respectful but candid way with our guest. We're better than entertainment, we're the REAL thing. Please enjoy the show.",
+        "summary_detail": {
+            "type": "text/plain",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/WWO7410387571",
+            "value": "The \"Shawn Ryan Show\" is hosted by Shawn Ryan, former U.S. Navy SEAL, CIA Contractor, and Founder of Vigilance Elite. We tell REAL stories about REAL people from all walks of life. We discuss the ups and downs, wins and losses, successes and struggles, the good and bad in a respectful but candid way with our guest. We're better than entertainment, we're the REAL thing. Please enjoy the show."
+        },
+        "content": "<p>The \"Shawn Ryan Show\" is hosted by Shawn Ryan, former U.S. Navy SEAL, CIA Contractor, and Founder of Vigilance Elite. We tell REAL stories about REAL people from all walks of life. We discuss the ups and downs, wins and losses, successes and struggles, the good and bad in a respectful but candid way with our guest. We're better than entertainment, we're the REAL thing. Please enjoy the show.</p>",
+        "content_detail": {
+            "type": "text/html",
+            "language": null,
+            "base": "https://feeds.megaphone.fm/WWO7410387571",
+            "value": "<p>The \"Shawn Ryan Show\" is hosted by Shawn Ryan, former U.S. Navy SEAL, CIA Contractor, and Founder of Vigilance Elite. We tell REAL stories about REAL people from all walks of life. We discuss the ups and downs, wins and losses, successes and struggles, the good and bad in a respectful but candid way with our guest. We're better than entertainment, we're the REAL thing. Please enjoy the show.</p>"
+        },
+        "publisher_detail": {
+            "name": "Shawn Ryan Show",
+            "email": "operations@vigilanceelite.com"
+        },
+        "tags": [
+            {
+                "term": "Society & Culture",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            },
+            {
+                "term": "Philosophy",
+                "scheme": "http://www.itunes.com/",
+                "label": null
+            }
+        ]
+    }
+]
