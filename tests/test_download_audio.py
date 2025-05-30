@@ -8,7 +8,6 @@ def test_load_metadata_from_json(tmp_path):
     test_data = [
         {
             "id": "123",
-            "title": "Test Episode",
             "links": [{"href": "http://example.com/audio.mp3"}],
         }
     ]
@@ -21,12 +20,11 @@ def test_load_metadata_from_json(tmp_path):
 
     assert isinstance(test_metadata, list)
     assert test_metadata[0]["id"] == "123"
-    assert test_metadata[0]["title"] == "Test Episode"
 
 
 def test_download_audio_no_links(tmp_path):
     """Test that the correct string is returned if there's no MP3 link."""
-    episode = {"title": "NoAudio", "links": []}
+    episode = {"id": "123", "links": []}
     output = download_audio(episode, str(tmp_path))
 
     assert "No audio found" in output
@@ -35,7 +33,7 @@ def test_download_audio_no_links(tmp_path):
 def test_download_audio_existing_file(tmp_path):
     """Test that a file doesn't get redownloaded if it's already saved."""
     episode = {
-        "title": "ExistingFile",
+        "id": "123",
         "links": [{"href": "http://example.com/audio.mp3"}],
     }
     filepath = tmp_path / "ExistingFile.mp3"
