@@ -45,11 +45,6 @@ def load_metadata_from_json(path: str) -> List[Dict[str, Any]]:
         return episode_metadata
 
 
-def sanitize_filename(filename: str) -> str:
-    # Replace characters that are not allowed in Windows and Mac filenames with an underscore
-    return re.sub(r'[<>:"/\\|?*]', '_', filename)
-
-
 def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
     """Downloads the MP3 for a single podcast episode.
 
@@ -65,8 +60,7 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
         The directory where the downloaded MP3 file should be saved.
     """
 
-    # Sanitize the episode title to replace invalid characters
-    title = sanitize_filename(episode.get("title", "untitled"))
+    id = episode.get("id")
 
     # Get the audio URL from links (if available)
     links = episode.get("links", [])
@@ -78,7 +72,7 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
             break
 
     if audio_url:
-        filepath = os.path.join(download_dir, f"{title}.mp3")
+        filepath = os.path.join(download_dir, f"{id}.mp3")
 
         # Don't re-download an existing MP3
         if os.path.exists(filepath):
@@ -99,7 +93,7 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
         except requests.RequestException as e:
             # If that fails, use curl as a fallback
             try:
-                print(f"requests failed: {e}. Trying with curl for: {title}")
+                print(f"requests failed: {e}. Trying with curl for id: {id}")
 
                 subprocess.run(
                     ["curl", "-L", "-k", "-o", filepath, audio_url], check=True
@@ -107,10 +101,10 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
                 return f"Saved with curl to: {filepath}\n"
 
             except subprocess.CalledProcessError as curl_err:
-                return f"Failed to download {title} with both requests and curl: {curl_err}\n"
+                return f"Failed to download {id} with both requests and curl: {curl_err}\n"
 
     else:
-        return f"No audio found for episode: {title}\n"
+        return f"No audio found for episode id: {id}\n"
 
 
 def download_audio_parallel(episode_metadata: List[Dict[str, Any]]):
