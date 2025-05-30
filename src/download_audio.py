@@ -10,7 +10,7 @@ Usage
 -----
 
 To execute this script, run:
-    python3 download_audio.py
+    python3 src/download_audio.py
 
 """
 import json

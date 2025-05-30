@@ -12,7 +12,7 @@ Usage
 -----
 
 To execute this script, run:
-    python3 extract_metadata.py --path YOUR_CSV_PATH --year FILTER_YEAR
+    python3 src/extract_metadata.py --path YOUR_CSV_PATH --year FILTER_YEAR
 
 """
 
