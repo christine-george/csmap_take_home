@@ -1,5 +1,6 @@
 import json
-from src.download_audio import load_metadata_from_json, download_audio
+
+from src.download_audio import download_audio, load_metadata_from_json
 
 
 def test_load_metadata_from_json(tmp_path):

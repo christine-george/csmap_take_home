@@ -1,11 +1,10 @@
+import csv
 import json
 import os
+
 import pytest
-import csv
-from src.extract_metadata import (
-    load_rss_urls,
-    save_metadata_to_json,
-)
+
+from src.extract_metadata import load_rss_urls, save_metadata_to_json
 
 
 def test_load_rss_urls(tmp_path):
