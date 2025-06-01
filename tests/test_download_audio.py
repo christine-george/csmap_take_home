@@ -35,9 +35,13 @@ def test_download_audio_existing_file(tmp_path):
     """Test that a file doesn't get redownloaded if it's already saved."""
     episode = {
         "id": "123",
-        "links": [{"href": "http://example.com/audio.mp3"}],
+        "links": [
+            {
+                "href": "http://example.com/audio.mp3", "type": "audio/mpeg"
+                }
+            ],
     }
-    filepath = tmp_path / "ExistingFile.mp3"
+    filepath = tmp_path / "123.mp3"
 
     # Create a test existing file
     filepath.write_text("test")

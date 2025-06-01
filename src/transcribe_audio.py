@@ -16,18 +16,15 @@ To execute this script, run:
 
 """
 
-import datetime
 import json
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple
 
-import torch
-
 # import whisperx
 
 # The path where the MP3s are
-AUDIO_DIR = "audio1"
+AUDIO_DIR = "episode_audio"
 # Configuration variables for the transcription model
 MODEL_SIZE = "tiny"
 DEVICE = "cpu"
@@ -56,7 +53,9 @@ def read_in_json(path: str) -> List[Dict[str, Any]]:
     return [], {}
 
 
-def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
+def transcribe_audio(
+        audio_file: str
+) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
     """Transcribes an episode of podcast from MP3 to text.
 
     Parameters
@@ -67,7 +66,8 @@ def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, An
     Returns
     -------
     tuple of str and dict
-        The episode ID, full transcription text dictionary, and segmented text dictionary.
+        The episode ID, full transcription text dictionary, and segmented text
+        dictionary.
 
     """
     global model
@@ -75,12 +75,13 @@ def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, An
     # model = whisperx.load_model(MODEL_SIZE, DEVICE, compute_type="int8")
     transcription = model.transcribe(audio_file, language="en")
 
-    # Extract the episode ID from the file name and the timestamped text segments from the transcription model
+    # Extract the episode ID from the file name and the timestamped text
+    # segments from the transcription model
     episode_id = os.path.basename(audio_file).replace(".mp3", "")
     segments = transcription["segments"]
 
-    # Create two dictionaries, one with the full text mapped to the episode ID, and one with the timestamped
-    # segments mapped to the episode ID
+    # Create two dictionaries, one with the full text mapped to the episode ID,
+    # and one with the timestamped segments mapped to the episode ID
     full_text_dict = create_full_text_dict(segments, episode_id)
     segmented_text_dict = create_segmented_text_dict(segments, episode_id)
 
@@ -90,22 +91,24 @@ def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, An
 def create_full_text_dict(
     segments: List[Dict[str, Any]], episode_id: str
 ) -> Dict[str, Any]:
-    """Creates a dictionary with the full transcript of a podcast episode in one string.
+    """Creates a dictionary with the full transcript in one string.
 
     Parameters
     ----------
     segments : list of dict
-        Dictionaries containing sections of texts and their start and end timestamps.
+        Dictionaries containing sections of texts and their start and end
+        timestamps.
     episode_id : str
         The unique episode ID from the RSS feed.
 
     Returns
     -------
     dict
-        A dictionary containing the episode ID and the full transcription as a single string.
+        A dictionary containing the episode ID and the full transcription as a
+        single string.
     """
-    # Since the segments dictionaries are loaded into the segment list on order, loop through
-    # and join the text together
+    # Since the segments dictionaries are loaded into the segment list in
+    # order, loop through and join the text together
     full_transcription_text = "".join(segment["text"] for segment in segments)
     full_text_dict = {"id": episode_id, "full_text": full_transcription_text}
 
@@ -115,19 +118,21 @@ def create_full_text_dict(
 def create_segmented_text_dict(
     segments: List[Dict[str, Any]], episode_id: str
 ) -> Dict[str, Any]:
-    """Creates a dictionary with the full transcript of a podcast episode split into timestamped sections.
+    """Creates a dictionary with the transcript split into timestamped parts.
 
     Parameters
     ----------
     segments : list of dict
-        Dictionaries containing sections of texts and their start and end timestamps.
+        Dictionaries containing sections of texts and their start and end
+        timestamps.
     episode_id : str
         The unique episode ID from the RSS feed.
 
     Returns
     -------
     dict
-        A dictionary containing the episode ID and the original timestamped transcript dictionary.
+        A dictionary containing the episode ID and the original timestamped
+        transcript dictionary.
     """
     # Map the segments dictionary directly to the associated episode ID
     segmented_text_dict = {"id": episode_id, "segmented_text": segments}
@@ -137,7 +142,7 @@ def create_segmented_text_dict(
 
 def transcribe_audio_parallel(
     audio_dir: str,
-) -> (List[Dict[str, Any]], List[Dict[str, Any]]):
+) -> Tuple[List[Dict[str, Any]], List[Dict[str, Any]]]:
     """Transcribes podcast episodes in parallel using using a process pool.
 
     Parameters
@@ -146,7 +151,9 @@ def transcribe_audio_parallel(
         The path containing all of the podcast episode MP3s.
     """
     # Check if audio has already been transcribed to avoid rewrites
-    full_text_dicts, existing_ids = read_in_json("data/full_text_transcriptions.json")
+    full_text_dicts, existing_ids = read_in_json(
+        "data/full_text_transcriptions.json"
+    )
     segmented_text_dicts, existing_ids = read_in_json(
         "data/segmented_text_transcriptions.json"
     )
@@ -168,8 +175,8 @@ def transcribe_audio_parallel(
             try:
                 episode_id, full_text_dict, segmented_text_dict = future.result()
 
-                # For each completed transcription, add them to the lists of finished full
-                # and segmented text dictionaries
+                # For each completed transcription, add them to the lists of
+                # finished full and segmented text dictionaries
                 full_text_dicts.append(full_text_dict)
                 segmented_text_dicts.append(segmented_text_dict)
 
@@ -196,7 +203,6 @@ def save_metadata_to_json(metadata: List[Dict[str, Any]], filename: str):
 
 
 def main():
-    start_time = datetime.datetime.now()
 
     # Transcribe audio files in parallel
     print("\nStarting audio transcription...")
@@ -204,15 +210,14 @@ def main():
 
     print("\nSaving transcriptions to JSONs...")
 
-    # Serialize final dictionaries to JSON and save files in the `data` directory
+    # Serialize final dictionaries to JSON and save files in the `data`
+    # directory
     save_metadata_to_json(full_text_dicts, "data/full_text_transcriptions.json")
     save_metadata_to_json(
         segmented_text_dicts, "data/segmented_text_transcriptions.json"
     )
 
     print("\nTranscription complete!")
-
-    print(datetime.datetime.now() - start_time)
 
 
 if __name__ == "__main__":
