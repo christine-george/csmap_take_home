@@ -18,7 +18,6 @@ To execute this script, run:
 
 import argparse
 import csv
-import json
 import src.utils as utils
 from typing import Any, Dict, List, Tuple
 

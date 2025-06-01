@@ -2,11 +2,12 @@
 transcribe_audio.py
 ===================
 
-This script transcribes the downloaded podcast episode MP3s and transcribes them
-into text. This transcribed text is returned in two JSONs: `data/full_text_transcriptions.json`,
-which contains the entire text of a podcast episode in one string, and
-`data/segmented_text_transcriptions.json`, whcih segments the entire text of the podcast episode
-into timestamped sections.
+This script transcribes the downloaded podcast episode MP3s and transcribes
+them into text. This transcribed text is returned in two JSONs:
+`data/full_text_transcriptions.json`, which contains the entire text of a
+podcast episode in one string, and `data/segmented_text_transcriptions.json`,
+whcih segments the entire text of the podcast episode into timestamped
+sections.
 
 Usage
 -----
@@ -22,8 +23,6 @@ import src.utils as utils
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple
 
-# import whisperx
-
 # The path where the MP3s are
 AUDIO_DIR = "episode_audio"
 # Configuration variables for the transcription model
@@ -32,10 +31,12 @@ DEVICE = "cpu"
 # Process count for transcribing audio in parallel
 NUM_WORKERS = 4
 
+# Initializing global transcription model
 model = None
 
 
 def init_worker():
+    """Initializes the transcription model in each process pool worker."""
     global model
     import whisperx
 
@@ -43,6 +44,22 @@ def init_worker():
 
 
 def read_in_json(path: str) -> List[Dict[str, Any]]:
+    """Reads in the existing transcription data from JSON to a list.
+
+    To avoid re-transcribing the same audio twice if it ran in two different
+    script executions, this function looks at the episode ID of what's already
+    been transcribed. If during transcription, this ID is encountered again, it
+    will be skipped.
+
+    Parameters
+    ----------
+    path
+        The path where the transcript text JSON file lives.
+
+    Returns
+    -------
+    tuple of list and dict
+    """
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -54,7 +71,9 @@ def read_in_json(path: str) -> List[Dict[str, Any]]:
     return [], {}
 
 
-def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
+def transcribe_audio(
+        audio_file: str
+) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
     """Transcribes an episode of podcast from MP3 to text.
 
     Parameters
@@ -150,7 +169,9 @@ def transcribe_audio_parallel(
         The path containing all of the podcast episode MP3s.
     """
     # Check if audio has already been transcribed to avoid rewrites
-    full_text_dicts, existing_ids = read_in_json("data/full_text_transcriptions.json")
+    full_text_dicts, existing_ids = read_in_json(
+        "data/full_text_transcriptions.json"
+    )
     segmented_text_dicts, existing_ids = read_in_json(
         "data/segmented_text_transcriptions.json"
     )
@@ -195,8 +216,10 @@ def main():
 
     # Serialize final dictionaries to JSON and save files in the `data`
     # directory
-    utils.save_data_to_json(full_text_dicts, "data/full_text_transcriptions.json")
     utils.save_data_to_json(
+        full_text_dicts, "data/full_text_transcriptions.json"
+    )
+    utils.save_metadata_to_json(
         segmented_text_dicts, "data/segmented_text_transcriptions.json"
     )
 
