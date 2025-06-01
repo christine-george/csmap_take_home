@@ -19,6 +19,7 @@ To execute this script, run:
 import argparse
 import csv
 import json
+import src.utils as utils
 from typing import Any, Dict, List, Tuple
 
 import feedparser
@@ -135,20 +136,6 @@ def extract_metadata(
         return {}, []
 
 
-def save_metadata_to_json(metadata: List[Dict[str, Any]], filename: str):
-    """Serializes metadata into JSON to save into a file.
-
-    Parameters
-    ----------
-    metadata : list of dict
-        The metadata to serialize into JSON.
-    filename : str
-        The file to write the metadata to.
-    """
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(metadata, f, ensure_ascii=False, indent=4)
-
-
 def main():
     # Parse CSV path and desired year from command line
     args = parse_arguments()
@@ -171,8 +158,8 @@ def main():
 
     # Serialize the metadata lists to JSON and save to files
     print("\nSaving metadata to JSON...")
-    save_metadata_to_json(all_show_metadata, "data/show_metadata.json")
-    save_metadata_to_json(all_episode_metadata, "data/episode_metadata.json")
+    utils.save_data_to_json(all_show_metadata, "data/show_metadata.json")
+    utils.save_data_to_json(all_episode_metadata, "data/episode_metadata.json")
 
     print("\nMetadata extraction complete!")
 

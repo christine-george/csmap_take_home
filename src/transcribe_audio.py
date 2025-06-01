@@ -18,6 +18,7 @@ To execute this script, run:
 
 import json
 import os
+import src.utils as utils
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple
 
@@ -53,9 +54,7 @@ def read_in_json(path: str) -> List[Dict[str, Any]]:
     return [], {}
 
 
-def transcribe_audio(
-        audio_file: str
-) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
+def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
     """Transcribes an episode of podcast from MP3 to text.
 
     Parameters
@@ -151,9 +150,7 @@ def transcribe_audio_parallel(
         The path containing all of the podcast episode MP3s.
     """
     # Check if audio has already been transcribed to avoid rewrites
-    full_text_dicts, existing_ids = read_in_json(
-        "data/full_text_transcriptions.json"
-    )
+    full_text_dicts, existing_ids = read_in_json("data/full_text_transcriptions.json")
     segmented_text_dicts, existing_ids = read_in_json(
         "data/segmented_text_transcriptions.json"
     )
@@ -188,20 +185,6 @@ def transcribe_audio_parallel(
     return full_text_dicts, segmented_text_dicts
 
 
-def save_metadata_to_json(metadata: List[Dict[str, Any]], filename: str):
-    """Serializes metadata into JSON to save into a file.
-
-    Parameters
-    ----------
-    metadata : list of dict
-        The metadata to serialize into JSON.
-    filename : str
-        The file to write the metadata to.
-    """
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(metadata, f, ensure_ascii=False, indent=4)
-
-
 def main():
 
     # Transcribe audio files in parallel
@@ -212,8 +195,8 @@ def main():
 
     # Serialize final dictionaries to JSON and save files in the `data`
     # directory
-    save_metadata_to_json(full_text_dicts, "data/full_text_transcriptions.json")
-    save_metadata_to_json(
+    utils.save_data_to_json(full_text_dicts, "data/full_text_transcriptions.json")
+    utils.save_data_to_json(
         segmented_text_dicts, "data/segmented_text_transcriptions.json"
     )
 

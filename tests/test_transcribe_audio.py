@@ -1,5 +1,4 @@
-from src.transcribe_audio import (create_full_text_dict,
-                                  create_segmented_text_dict)
+from src.transcribe_audio import create_full_text_dict, create_segmented_text_dict
 
 
 def test_create_full_text_dict():

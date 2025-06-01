@@ -1,10 +1,8 @@
 import csv
-import json
-import os
 
 import pytest
 
-from src.extract_metadata import load_rss_urls, save_metadata_to_json
+from src.extract_metadata import load_rss_urls
 
 
 def test_load_rss_urls(tmp_path):
@@ -33,20 +31,3 @@ def test_load_rss_urls_missing_column(tmp_path):
 
     with pytest.raises(ValueError):
         load_rss_urls(str(csv_path))
-
-
-def test_save_metadata_to_json(tmp_path):
-    """Test that metadata in list form properly loads into a CSV."""
-    data = [{"id": 123, "title": "Test"}]
-    filepath = tmp_path / "metadata.json"
-
-    save_metadata_to_json(data, str(filepath))
-
-    assert os.path.exists(filepath)
-    with open(filepath, "r") as f:
-        loaded = json.load(f)
-    assert loaded == data
-
-
-if __name__ == "__main__":
-    pytest.main()

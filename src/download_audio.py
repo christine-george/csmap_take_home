@@ -16,7 +16,6 @@ To execute this script, run:
 
 import json
 import os
-import re
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List
