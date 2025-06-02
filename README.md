@@ -15,8 +15,8 @@ You can use the query [found here](/query.sql) to do so.
 
 I established a few assumptions at the beginning to establish an idea of the project scope and target audience:
 
-* This pipeline is meant for an audience who is comfortable with Python and SQL. Leave good comments and docstrings,
-but don't overexplain every line in the code.
+* This pipeline is meant for an audience who is comfortable with Python and SQL. The documentation and comments
+match that comfort level appropriately.
 * This pipeline runs on manual script triggers rather than automated orchestration like Airflow or a cronjob.
 * Raw data does not need to be stored in a data lake--the final table output is all that's necessary. Also,
 the MP3 files don't need to be stored in GitHub to avoid bloating the repo.
@@ -140,7 +140,7 @@ since the values were still easily accessible in that format.
 rely on start and end times.
 5. In the interest of time, I didn't get around to adding unit tests for these scripts.
 
-#### <u>Other</u>
+#### Other
 
 Design decisions were:
 
@@ -153,7 +153,7 @@ Design decisions were:
 * I would orchestrate this pipeline using a tool like Airflow to automatically trigger the sequence
 of tasks. This could also be transformed into a batch pipeline that makes regular, incremental updates
 to an existing table rather than a full refresh load on each run.
-* If resource constraints weren't an issue, I'd store the MP3 files in a raw data layer since it's best
+* If resource constraints weren't an issue, I'd store the MP3 files in a raw data layer in GCP since it's best
 practice to save data at each step in the pipeline. Then, there would be a source of truth to work off of
 if the end table is somehow corrupted. This would also open the door to more easily exploring Google's
 Speech-to-Text API for transcription.
