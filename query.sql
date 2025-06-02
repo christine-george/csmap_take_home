@@ -1,6 +1,5 @@
 SELECT DISTINCT e.title AS episode_title, 
-                p.title AS podcast_title, 
-                s.text AS segment_text
+                p.title AS podcast_title
 FROM information.episode e
 JOIN information.show p 
     ON e.title_detail->>'base' = p.title_detail->>'base'
