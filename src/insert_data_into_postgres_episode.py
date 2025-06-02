@@ -16,6 +16,7 @@ To execute this script, run:
 import json
 import os
 from typing import Any, Dict, List
+import src.utils as utils
 
 import psycopg
 from dotenv import load_dotenv
@@ -163,8 +164,7 @@ def write_to_postgres(dsn: str, data: List[Dict[str, Any]]):
 
 def main():
     # Load JSON data from file path
-    with open(json_file_path, "r", encoding="utf-8") as f:
-        data = json.load(f)
+    data = utils.read_json_from_file(json_file_path)
 
     # Structure connection variables for Postgres table (defined in .env)
     load_dotenv()

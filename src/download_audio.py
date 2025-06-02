@@ -14,35 +14,16 @@ To execute this script, run:
 
 """
 
-import json
 import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List
+import src.utils as utils
 
 import requests
 
 # Thread count for downloading audio in parallel
 MAX_WORKERS = 10
-
-
-def load_metadata_from_json(path: str) -> List[Dict[str, Any]]:
-    """Loads episode metadata from a JSON into a list of dicts.
-
-    Parameters
-    ----------
-    path : str
-        The path to the JSON metadata file.
-
-    Returns
-    -------
-    episode_metadata : list of dict
-        A list of dictionaries, each representing metadata for an episode
-        published in the `target_year` (defined in extract_metadata.py).
-    """
-    with open(path, "r", encoding="utf-8") as f:
-        episode_metadata = json.load(f)
-        return episode_metadata
 
 
 def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
@@ -138,7 +119,7 @@ def download_audio_parallel(episode_metadata: List[Dict[str, Any]]):
 def main():
     # Deserialize JSON to a list
     print("\nLoading episode metadata from JSON...")
-    episode_metadata = load_metadata_from_json("data/episode_metadata.json")
+    episode_metadata = utils.read_json_from_file("data/episode_metadata.json")
 
     # Download audio files in parallel to a directory
     print("\nDownloading MP3 files...\n")

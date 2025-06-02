@@ -17,11 +17,9 @@ To execute this script, run:
 
 """
 
-import json
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple, Set
-
 import src.utils as utils
 
 # The path where the MP3s are
@@ -64,10 +62,10 @@ def read_in_json(path: str) -> List[Set[str]]:
         and a set of unique episode IDs from the JSON.
     """
     if os.path.exists(path):
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
-            existing_ids = {item["id"] for item in data if "id" in item}
-            print(f"\nLoaded {path} JSON.")
+        data = utils.read_json_from_file(path)
+
+        existing_ids = {item["id"] for item in data if "id" in item}
+        print(f"\nLoaded {path} JSON.")
 
         return data, existing_ids
 
