@@ -74,12 +74,12 @@ def prepare_json_fields(row: Dict[str, Any]) -> Dict[str, Any]:
 
     Parameters
     ----------
-    row : dict of any
+    row : dict
         A dictionary for a single shows's data.
 
     Returns
     -------
-    row : dict of any
+    row : dict
         A dictionary for a single show's data with nested dictionaries
         serialized into JSON strings.
     """
