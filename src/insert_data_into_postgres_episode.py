@@ -101,7 +101,6 @@ def write_to_postgres(dsn: str, data: List[Dict[str, Any]]):
         The episode data to write.
     """
     with psycopg.connect(dsn) as conn:
-        print("\nconnection made")
         with conn.cursor() as cur:
             insert_query = """
             INSERT INTO csmap.information.episode (
@@ -149,7 +148,7 @@ def write_to_postgres(dsn: str, data: List[Dict[str, Any]]):
                 # Serialize all nested dictionaries
                 prepared_row = prepare_json_fields(row)
 
-                # Fill in missing keys in some episodes with None
+                # Fill in missing keys in episodes with None
                 for key in expected_keys:
                     if key not in prepared_row:
                         prepared_row[key] = None

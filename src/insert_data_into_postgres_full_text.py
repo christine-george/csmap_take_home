@@ -1,49 +1,85 @@
+"""
+insert_data_into_postgres_full_text.py
+======================================
+
+This script loads episode metdata from `data/full_text_transcriptions.json`
+into the GCP-hosted PostgreSQL table, `csmap.transcript.full`.
+
+Usage
+-----
+
+To execute this script, run:
+    python3 src/insert_data_into_postgres_full_text.py
+
+"""
+
 import psycopg
 from dotenv import load_dotenv
 import os
 import json
+from typing import Dict, Any, List
 
-load_dotenv()
 
-# Path to your JSON file
+# Path to the JSON file
 json_file_path = "data/full_text_transcriptions.json"
 
-# Load JSON data from file
-with open(json_file_path, "r", encoding="utf-8") as f:
-    data = json.load(f)
-
-
+# All the top-level keys in the data
 expected_keys = ["id", "full_text"]
 
 
-print("\ndata loaded")
+def write_to_postgres(dsn: str, data: List[Dict[str, Any]]):
+    """Write each full transcript to Postgres.
 
-dsn = f"host={os.getenv('DB_HOST')} dbname={os.getenv('DB_NAME')} user={os.getenv('DB_USER')} password={os.getenv('DB_PASSWORD')} port={os.getenv('DB_PORT')}"
+    Parameters
+    ----------
+    dsn : str
+        A formatted string containing variables to make the Postgres
+        table connection.
+    data : list of dict
+        The full text data to write.
+    """
+    with psycopg.connect(dsn) as conn:
+        with conn.cursor() as cur:
+            insert_query = """
+            INSERT INTO csmap.transcript.full (
+                id, full_text
+            )
+            VALUES (
+                %(id)s, %(full_text)s
+            )
+            ON CONFLICT (id) DO UPDATE SET
+                id = EXCLUDED.id,
+                full_text = EXCLUDED.full_text;
+            """
 
-with psycopg.connect(dsn) as conn:
-    print("\nconnection made")
-    with conn.cursor() as cur:
-        insert_query = """
-        INSERT INTO csmap.transcript.full (
-            id, full_text
-        )
-        VALUES (
-            %(id)s, %(full_text)s
-        )
-        ON CONFLICT (id) DO UPDATE SET
-            id = EXCLUDED.id,
-            full_text = EXCLUDED.full_text;
-        """
-        for row in data:
-            # Ensure all keys exist in prepared_show dict
-            for key in expected_keys:
-                if key not in row:
-                    row[key] = None  # or some appropriate default
+            for row in data:
+                # Fill in missing keys in transcripts with None
+                for key in expected_keys:
+                    if key not in row:
+                        row[key] = None
 
-            for key, val in row.items():
-                print(key, type(val))
+                # Load the row for table insertion
+                cur.execute(insert_query, row)
+                print(f"\n{row.get("id")} inserted or updated")
 
-            cur.execute(insert_query, row)
-            print(f"\n{row.get("id")} inserted or updated")
-        conn.commit()
-        print(f"\n{len(data)} transcripts inserted or updated successfully.")
+            conn.commit()
+
+
+def main():
+    # Load JSON data from file path
+    with open(json_file_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    # Structure connection variables for Postgres table (defined in .env)
+    load_dotenv()
+    dsn = f"host={os.getenv('DB_HOST')} dbname={os.getenv('DB_NAME')} user={os.getenv('DB_USER')} password={os.getenv('DB_PASSWORD')} port={os.getenv('DB_PORT')}"
+
+    # Write data to Postgres table
+    print("\nWriting data to Postgres...")
+    write_to_postgres(dsn, data)
+
+    print(f"\n{len(data)} transcripts inserted or updated successfully.")
+
+
+if __name__ == "__main__":
+    main()
