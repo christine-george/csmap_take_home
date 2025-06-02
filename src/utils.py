@@ -7,7 +7,7 @@ This script contains shared utility functions.
 """
 
 import json
-from typing import List, Dict, Any
+from typing import Any, Dict, List
 
 
 def save_data_to_json(data: List[Dict[str, Any]], filename: str):

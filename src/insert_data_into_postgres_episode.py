@@ -13,11 +13,12 @@ To execute this script, run:
 
 """
 
+import json
+import os
+from typing import Any, Dict, List
+
 import psycopg
 from dotenv import load_dotenv
-import os
-import json
-from typing import Dict, Any, List
 
 # Path to the JSON file
 json_file_path = "data/episode_metadata.json"

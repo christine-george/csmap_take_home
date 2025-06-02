@@ -19,9 +19,10 @@ To execute this script, run:
 
 import json
 import os
-import src.utils as utils
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Any, Dict, List, Tuple
+
+import src.utils as utils
 
 # The path where the MP3s are
 AUDIO_DIR = "episode_audio"
@@ -71,9 +72,7 @@ def read_in_json(path: str) -> List[Dict[str, Any]]:
     return [], {}
 
 
-def transcribe_audio(
-        audio_file: str
-) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
+def transcribe_audio(audio_file: str) -> Tuple[str, Dict[str, Any], Dict[str, Any]]:
     """Transcribes an episode of podcast from MP3 to text.
 
     Parameters
@@ -169,9 +168,7 @@ def transcribe_audio_parallel(
         The path containing all of the podcast episode MP3s.
     """
     # Check if audio has already been transcribed to avoid rewrites
-    full_text_dicts, existing_ids = read_in_json(
-        "data/full_text_transcriptions.json"
-    )
+    full_text_dicts, existing_ids = read_in_json("data/full_text_transcriptions.json")
     segmented_text_dicts, existing_ids = read_in_json(
         "data/segmented_text_transcriptions.json"
     )
@@ -216,9 +213,7 @@ def main():
 
     # Serialize final dictionaries to JSON and save files in the `data`
     # directory
-    utils.save_data_to_json(
-        full_text_dicts, "data/full_text_transcriptions.json"
-    )
+    utils.save_data_to_json(full_text_dicts, "data/full_text_transcriptions.json")
     utils.save_metadata_to_json(
         segmented_text_dicts, "data/segmented_text_transcriptions.json"
     )
