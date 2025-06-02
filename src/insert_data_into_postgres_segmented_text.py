@@ -15,10 +15,11 @@ To execute this script, run:
 
 import os
 from typing import Any, Dict, List
-import src.utils as utils
 
 import psycopg
 from dotenv import load_dotenv
+
+import src.utils as utils
 
 # Path to the JSON file
 json_file_path = "data/segmented_text_transcriptions.json"

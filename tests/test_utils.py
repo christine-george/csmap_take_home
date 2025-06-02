@@ -1,7 +1,7 @@
 import json
 import os
 
-from src.utils import save_data_to_json, read_data_from_json
+from src.utils import read_data_from_json, save_data_to_json
 
 
 def test_save_data_to_json(tmp_path):

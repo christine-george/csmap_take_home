@@ -18,9 +18,10 @@ import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any, Dict, List
-import src.utils as utils
 
 import requests
+
+import src.utils as utils
 
 # Thread count for downloading audio in parallel
 MAX_WORKERS = 10

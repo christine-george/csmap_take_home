@@ -19,7 +19,8 @@ To execute this script, run:
 
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from typing import Any, Dict, List, Tuple, Set
+from typing import Any, Dict, List, Set, Tuple
+
 import src.utils as utils
 
 # The path where the MP3s are
