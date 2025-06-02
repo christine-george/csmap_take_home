@@ -221,7 +221,7 @@ def main():
     # Serialize final dictionaries to JSON and save files in the `data`
     # directory
     utils.save_data_to_json(full_text_dicts, "data/full_text_transcriptions.json")
-    utils.save_metadata_to_json(
+    utils.save_data_to_json(
         segmented_text_dicts, "data/segmented_text_transcriptions.json"
     )
 
