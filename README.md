@@ -145,7 +145,8 @@ rely on start and end times.
 Design decisions were:
 
 1. I created a [`utils.py`](src/utils.py) to reduce redunancy and try to share code amongst scripts.
-2. I added unit tests in the [tests](/tests/) directory to give myself basic checks for code stability.
+2. I added `pytest` unit tests in the [tests](/tests/) directory to give myself basic checks for code stability.
+3. I used `black` and `isort` for code formatting, and I used numpy-style docstrings for code documentation.
 
 ## Future Considerations
 
