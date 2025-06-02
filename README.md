@@ -55,7 +55,7 @@ The steps in [`download_audio.py`](src/download_audio.py) are:
 1. Load the episode metadata from [`episode_metadata.json`](data/episode_metadata.json) into the script.
 2. For each episode, find the audio file URL and download it using the `requests` library. If this fails,
 use curl as a fallback method.
-3. Save these MP3s into a separate directory, `episode_audio/`.
+3. Save these MP3s into a separate directory, `episode_audio`.
 4. Parallelize steps 2 and 3 using a thread pool.
 
 Design decisions were:
@@ -79,7 +79,7 @@ The steps in [`transcribe_audio.py`](src/transcribe_audio.py) are:
 [`segmented_text_transcriptions.json`](data/segmented_text_transcriptions.json) to see what's already been
 transcribed.
 2. With a parallel process pool, initialize each worker with the WhisperX transcription model.
-3. For each audio file in the `episode_audio/` directory, call the model's `.transcribe()` function to
+3. For each audio file in the `episode_audio` directory, call the model's `.transcribe()` function to
 get the text transcript.
 4. Using the output, create two dictionaries: one mapping the ID to the full text version of the transcript,
 and another mapping the ID to the segmented text version of the transcript. For each completed audio file,
