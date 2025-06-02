@@ -27,7 +27,7 @@ the MP3 files don't need to be stored in GitHub to avoid bloating the repo.
 
 ### Architecture Walkthrough + Design Decisions
 
-#### <u>Extract the metadata</u>
+#### Extract the metadata
 
 The steps in [`extract_metadata.py`](src/extract_metadata.py) are:
 
@@ -48,7 +48,7 @@ to create well-defined tables for the metadata.
 3. Creating separate [`data`](/data/) and [`src`](/src/) directories in the repo will keep everything organized
 and easier to find.
 
-#### <u>Download the audio</u>
+#### Download the audio
 
 The steps in [`download_audio.py`](src/download_audio.py) are:
 
@@ -71,7 +71,7 @@ explored the audio manually beforehand and made sure it was safe.
 3. Parallelizing the downloads made it a lot faster to grab the audio rather than having to wait for each I/O
 operation sequentially.
 
-#### <u>Transcribe the audio</u>
+#### Transcribe the audio
 
 The steps in [`transcribe_audio.py`](src/transcribe_audio.py) are:
 
@@ -100,7 +100,7 @@ my laptop could handle and to try to maximize the number of files I could transc
 4. I mapped the transcription outputs to episode ID to make it easy to have a join condition later on when
 this data was stored in a Postgres table.
 
-#### <u>Write the data to Postgres</u>
+#### Write the data to Postgres
 
 Before writing to Postgres, I created four tables for all the data. The tables (and their linked DDLs) are:
 
