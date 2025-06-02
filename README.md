@@ -65,7 +65,7 @@ two podcast episodes had the same exact title, but differing metadata otherwise 
 Being a Good Girl"). Since I had logic to skip downloading a file if the name is already present in the
 directory, I used ID since each episode was guaranteed to have a unique one.
 2. I used curl with the `-k` flag as a fallback since the requests library had issues with one domain name
-("www.stitcher.com") since the SSL certificate had expired. The episode wasn't hosted there, but it was one
+(www.stitcher.com) since the SSL certificate had expired. The episode wasn't hosted there, but it was one
 of the redirect URLs. If it were a production project or sensitive data, I wouldn't do that, but I
 explored the audio manually beforehand and made sure it was safe.
 3. Parallelizing the downloads made it a lot faster to grab the audio rather than having to wait for each I/O
