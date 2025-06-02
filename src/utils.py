@@ -24,7 +24,7 @@ def save_data_to_json(data: List[Dict[str, Any]], filename: str):
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
-def read_json_from_file(filename: str) -> List[Dict[str, Any]]:
+def read_data_from_json(filename: str) -> List[Dict[str, Any]]:
     """Deserializes JSON from a file to data.
 
     Parameters

@@ -119,7 +119,7 @@ def download_audio_parallel(episode_metadata: List[Dict[str, Any]]):
 def main():
     # Deserialize JSON to a list
     print("\nLoading episode metadata from JSON...")
-    episode_metadata = utils.read_json_from_file("data/episode_metadata.json")
+    episode_metadata = utils.read_data_from_json("data/episode_metadata.json")
 
     # Download audio files in parallel to a directory
     print("\nDownloading MP3 files...\n")

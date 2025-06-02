@@ -62,7 +62,7 @@ def read_in_json(path: str) -> List[Set[str]]:
         and a set of unique episode IDs from the JSON.
     """
     if os.path.exists(path):
-        data = utils.read_json_from_file(path)
+        data = utils.read_data_from_json(path)
 
         existing_ids = {item["id"] for item in data if "id" in item}
         print(f"\nLoaded {path} JSON.")

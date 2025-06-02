@@ -164,7 +164,7 @@ def write_to_postgres(dsn: str, data: List[Dict[str, Any]]):
 
 def main():
     # Load JSON data from file path
-    data = utils.read_json_from_file(json_file_path)
+    data = utils.read_data_from_json(json_file_path)
 
     # Structure connection variables for Postgres table (defined in .env)
     load_dotenv()
