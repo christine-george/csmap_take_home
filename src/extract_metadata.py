@@ -62,7 +62,7 @@ def load_rss_urls(path: str) -> List[str]:
 
     Returns
     -------
-    list of str
+    rss_urls: list of str
         A list of all the RSS URLS contained in the CSV.
 
     Raises

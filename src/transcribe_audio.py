@@ -20,7 +20,7 @@ To execute this script, run:
 import json
 import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
-from typing import Any, Dict, List, Tuple
+from typing import Any, Dict, List, Tuple, Set
 
 import src.utils as utils
 
@@ -44,7 +44,7 @@ def init_worker():
     model = whisperx.load_model(MODEL_SIZE, DEVICE, compute_type="int8")
 
 
-def read_in_json(path: str) -> List[Dict[str, Any]]:
+def read_in_json(path: str) -> List[Set[str]]:
     """Reads in the existing transcription data from JSON to a list.
 
     To avoid re-transcribing the same audio twice if it ran in two different
@@ -54,12 +54,14 @@ def read_in_json(path: str) -> List[Dict[str, Any]]:
 
     Parameters
     ----------
-    path
+    path : str
         The path where the transcript text JSON file lives.
 
     Returns
     -------
-    tuple of list and dict
+    tuple of list and set
+        A tuple containing the deserialized JSON of existing transcription data
+        and a set of unique episode IDs from the JSON.
     """
     if os.path.exists(path):
         with open(path, "r", encoding="utf-8") as f:
@@ -120,7 +122,7 @@ def create_full_text_dict(
 
     Returns
     -------
-    dict
+    full_text_dict : dict
         A dictionary containing the episode ID and the full transcription as a
         single string.
     """
@@ -147,7 +149,7 @@ def create_segmented_text_dict(
 
     Returns
     -------
-    dict
+    segmented_text_dict : dict
         A dictionary containing the episode ID and the original timestamped
         transcript dictionary.
     """
@@ -166,6 +168,12 @@ def transcribe_audio_parallel(
     ----------
     audio_dir : str
         The path containing all of the podcast episode MP3s.
+
+    Returns
+    -------
+    tuple of dicts
+        A tuple containg the dictionaries of full text transcription and
+        segmented text transcription.
     """
     # Check if audio has already been transcribed to avoid rewrites
     full_text_dicts, existing_ids = read_in_json("data/full_text_transcriptions.json")

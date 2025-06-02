@@ -58,6 +58,11 @@ def download_audio(episode: Dict[str, Any], download_dir: str) -> str:
         `target_year` (defined in extract_metadata.py).
     download_dir : str
         The directory where the downloaded MP3 file should be saved.
+
+    Returns
+    -------
+    str
+        A string indicating the status of the audio download.
     """
 
     episode_id = episode.get("id")
