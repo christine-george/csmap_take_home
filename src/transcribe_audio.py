@@ -21,7 +21,7 @@ import os
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from typing import Any, Dict, List, Set, Tuple
 
-import src.utils as utils
+import utils as utils
 
 # The path where the MP3s are
 AUDIO_DIR = "episode_audio"

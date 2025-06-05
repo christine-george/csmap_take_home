@@ -22,7 +22,7 @@ from typing import Any, Dict, List, Tuple
 
 import feedparser
 
-import src.utils as utils
+import utils as utils
 
 
 def parse_arguments() -> argparse.Namespace:

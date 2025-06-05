@@ -20,7 +20,7 @@ from typing import Any, Dict, List
 import psycopg
 from dotenv import load_dotenv
 
-import src.utils as utils
+import utils as utils
 
 # Path to the JSON file
 json_file_path = "data/episode_metadata.json"

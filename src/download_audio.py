@@ -21,7 +21,7 @@ from typing import Any, Dict, List
 
 import requests
 
-import src.utils as utils
+import utils as utils
 
 # Thread count for downloading audio in parallel
 MAX_WORKERS = 10

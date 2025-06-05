@@ -19,7 +19,7 @@ from typing import Any, Dict, List
 import psycopg
 from dotenv import load_dotenv
 
-import src.utils as utils
+import utils as utils
 
 # Path to your the file
 json_file_path = "data/show_metadata.json"
@@ -107,7 +107,7 @@ def write_to_postgres(dsn: str, data: List[Dict[str, Any]]):
     with psycopg.connect(dsn) as conn:
         with conn.cursor() as cur:
             insert_query = """
-            INSERT INTO csmap.information.show (
+            INSERT INTO csmap.metadata.show (
                 title, title_detail, links, link, subtitle,
                 subtitle_detail, rights, rights_detail,
                 generator, generator_detail, language, authors,
